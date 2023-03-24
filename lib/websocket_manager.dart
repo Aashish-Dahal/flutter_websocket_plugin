@@ -89,7 +89,7 @@ class WebsocketManager {
   }
 
   /// Send a [String] message to the connected WebSocket.
-  void send(String message) {
+  void send(dynamic message) {
     _channel.invokeMethod<dynamic>(_METHOD_CHANNEL_SEND, message);
   }
 
